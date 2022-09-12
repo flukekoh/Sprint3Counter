@@ -11,11 +11,11 @@ class ViewController: UIViewController {
     
     private var counter = 0
     
-    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak private var counterLabel: UILabel!
     
-    @IBOutlet weak var incrementButton: UIButton!
+    @IBOutlet weak private var incrementButton: UIButton!
     
-    @IBAction func increaseCounter(_ sender: Any) {
+    @IBAction private func increaseCounter(_ sender: Any) {
         counter+=1
         updateCounter()
     }
